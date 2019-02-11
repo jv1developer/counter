@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>EJS Cat Data</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>This is the details page.</h1>
+        <% for (var x in cats_array) { %>
+            <p>Photo: <img src="<%= cats_array[x].photo %>"></p>
+            <h3>Name: <%= cats_array[x].name %></h3>
+            <h4>Email: <%= cats_array[x].email %></h4>
+            <hr>
+        <% } %>
+    </body>
+</html>
